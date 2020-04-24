@@ -1,0 +1,19 @@
+{
+  "name": "CryptoChat",
+  "displayName": "CryptoChat",
+  "expo": {
+    "name": "CryptoChat",
+    "slug": "CryptoChat",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/LiranLuL/CryptoChat"
+  }
+}

@@ -1,29 +1,51 @@
-import * as React from 'react';
-import { Platform, StyleSheet, Text, View,Image } from 'react-native';
-
-const instructions = Platform.select({
-  ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
-  android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
-});
-
+import React from 'react';
+import {ImageBackground,Image,TouchableOpacity,StyleSheet, Text, View, TextInput } from 'react-native';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.logo}>CryptoChat</Text>
+    <View style={styles.InputForm}>
+      <ImageBackground source={require("C:/Users/Liran/Cryptochay/gradient.png")} style={styles.InputForm}>
+      <TextInput style={styles.Input}
+        defaultValue="Password"
+      />
+      <TouchableOpacity style={styles.Button}
+       activeOpacity={0.5}
+       >
+        <Text style={{fontSize:39,}}>Sign</Text>
+        </TouchableOpacity>
+      </ImageBackground>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
-  container: {
+  InputForm: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'up',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'center',
+    width: '100%', 
+    height: '100%',
   },
-  logo:{
-    fontSize: 30,
+  Button:{
+    height: 60,
+    width:200,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 12,
+    padding: 12,
+    borderRadius: 26,
+    backgroundColor:'#8021DF',
+  },
+  Input:{
+    textDecorationColor:"white",
+    marginTop: 12,
+    padding: 12,
+    borderRadius: 26,
+      height: 60,
+      width:300,  
+      marginBottom:50,
+      backgroundColor:"#BC9CEA",
+  },
+  ImageBackground:
+  {
+   
   }
- 
 });
